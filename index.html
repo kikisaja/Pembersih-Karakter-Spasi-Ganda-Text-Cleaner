@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Size Chart 👟👕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">qqsaja</span>
+            <h1>👕 FIT & SIZE FINDER</h1>
+            <p>Pilih kategori & ukuran untuk melihat estimasi dimensinya!</p>
+        </header>
+
+        <!-- Kategori Switcher (Baju / Sepatu) -->
+        <div class="category-toggle">
+            <button id="btn-shirt" class="toggle-btn active">👕 BAJU</button>
+            <button id="btn-shoes" class="toggle-btn">👟 SEPATU</button>
+        </div>
+
+        <!-- Pilihan Ukuran (Pill Buttons) -->
+        <div class="size-options" id="size-options-container">
+            <!-- Pilihan ukuran di-generate via JavaScript -->
+        </div>
+
+        <!-- Tampilan Card Detail Dimensi -->
+        <div class="dimension-card">
+            <div class="selected-label">
+                <span id="selected-size-name">Ukuran M</span>
+                <span id="fit-tag" class="fit-badge">Reguler Fit</span>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-box">
+                    <span id="label-dim-1" class="metric-title">Panjang Baju</span>
+                    <span id="val-dim-1" class="metric-value">70 cm</span>
+                </div>
+                <div class="metric-box">
+                    <span id="label-dim-2" class="metric-title">Lebar Dada</span>
+                    <span id="val-dim-2" class="metric-value">50 cm</span>
+                </div>
+            </div>
+
+            <!-- Visual Panduan Singkat -->
+            <div class="guide-box">
+                <span class="guide-icon">💡</span>
+                <p id="size-recommendation">Cocok untuk tinggi badan 165 - 172 cm dan BB 55 - 65 kg.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
